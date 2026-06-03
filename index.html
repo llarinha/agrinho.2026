@@ -1,72 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>AgroForte</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgroForte</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>🌱 AgroForte</h1>
+    <div class="logo">🌿 AgroForte</div>
 
-  <button id="menu-btn">☰</button>
-
-  <nav id="menu">
-    <a href="#home">Início</a>
-    <a href="#news">Notícias</a>
-    <a href="#about">Sobre</a>
-  </nav>
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Sustentabilidade</a></li>
+            <li><a href="#">Sobre</a></li>
+        </ul>
+    </nav>
 </header>
 
-<section id="home" class="hero">
-  <h2>Agro Forte, Futuro Sustentável</h2>
-  <p>O equilíbrio entre produção agrícola e preservação ambiental</p>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Agro Forte</h1>
+        <p>
+            Promovendo o equilíbrio entre produção agrícola e
+            preservação ambiental para um futuro sustentável.
+        </p>
+
+        <a href="#" class="btn">Saiba Mais</a>
+    </div>
 </section>
 
-<section id="news">
-  <h2>Últimas Notícias</h2>
+<section class="sobre">
+    <h2>O Futuro da Agricultura Sustentável</h2>
 
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1763451327058-cb863796dd6b">
-    <h3>Tecnologias Verdes</h3>
-    <p class="text">
-      Estudo mostra como tecnologias sustentáveis aumentam a produtividade...
-      <span class="more">
-        Com uso de energia solar e irrigação inteligente, fazendas aumentaram produção em até 40%.
-      </span>
+    <p>
+        O AgroForte busca unir inovação, produtividade e respeito
+        ao meio ambiente, incentivando práticas agrícolas modernas
+        e sustentáveis.
     </p>
-    <button class="btn">Ler mais</button>
-  </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1761120812719-33af632a3f67">
-    <h3>Agricultura Regenerativa</h3>
-    <p class="text">
-      Técnicas sustentáveis estão recuperando o solo...
-      <span class="more">
-        Práticas como rotação de culturas aumentam a fertilidade e reduzem químicos.
-      </span>
-    </p>
-    <button class="btn">Ler mais</button>
-  </div>
-
 </section>
 
-<section id="about">
-  <h2>Sobre</h2>
-  <p>
-    O AgroForte promove sustentabilidade no agronegócio,
-    unindo tecnologia e preservação ambiental.
-  </p>
+<section class="stats">
+
+    <div class="card">
+        <div class="numero" data-target="40">0</div>
+        <p>Aumento na Eficiência</p>
+    </div>
+
+    <div class="card">
+        <div class="numero" data-target="30">0</div>
+        <p>Redução no Consumo de Água</p>
+    </div>
+
+    <div class="card">
+        <div class="numero" data-target="50">0</div>
+        <p>Menos Emissões de CO₂</p>
+    </div>
+
+    <div class="card">
+        <div class="numero" data-target="1000">0</div>
+        <p>Fazendas Sustentáveis</p>
+    </div>
+
 </section>
 
 <footer>
-  <p>© 2026 AgroForte</p>
+
+<div class="footer-grid">
+
+<div>
+<h3>🌿 AgroForte</h3>
+
+<p>
+Promovendo o equilíbrio entre produção agrícola
+e preservação ambiental para um futuro sustentável.
+</p>
+</div>
+
+<div>
+<h3>Navegação</h3>
+
+<ul>
+<li><a href="#">Início</a></li>
+<li><a href="#">Notícias</a></li>
+<li><a href="#">Sustentabilidade</a></li>
+<li><a href="#">Tecnologia</a></li>
+</ul>
+</div>
+
+<div>
+<h3>Temas</h3>
+
+<ul>
+<li>Agricultura Regenerativa</li>
+<li>Tecnologias Verdes</li>
+<li>Conservação do Solo</li>
+<li>Energia Renovável</li>
+</ul>
+</div>
+
+<div>
+<h3>Contato</h3>
+
+<p>(42) 99996-2983</p>
+<p>contato@agroforte.com</p>
+</div>
+
+</div>
+
+<div class="copy">
+© 2026 AgroForte. Todos os direitos reservados.
+</div>
+
 </footer>
 
-<!-- JS separado -->
 <script src="script.js"></script>
-
 </body>
 </html>

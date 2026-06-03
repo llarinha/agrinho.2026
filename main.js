@@ -1,22 +1,51 @@
-// MENU MOBILE
-const btn = document.getElementById("menu-btn");
-const menu = document.getElementById("menu");
+const numeros = document.querySelectorAll('.numero');
 
-btn.onclick = () => {
-  menu.classList.toggle("active");
-};
+function animarNumeros() {
 
-// BOTÃO LER MAIS
-document.querySelectorAll(".btn").forEach((button) => {
-  button.onclick = () => {
-    const moreText = button.previousElementSibling.querySelector(".more");
+    numeros.forEach(numero => {
 
-    if (moreText.style.display === "inline") {
-      moreText.style.display = "none";
-      button.innerText = "Ler mais";
-    } else {
-      moreText.style.display = "inline";
-      button.innerText = "Mostrar menos";
-    }
-  };
+        const alvo = +numero.dataset.target;
+        let atual = 0;
+
+        const incremento = alvo / 100;
+
+        const contador = setInterval(() => {
+
+            atual += incremento;
+
+            if(atual >= alvo){
+
+                numero.innerText =
+                    alvo >= 1000 ? alvo + "+" : alvo + "%";
+
+                clearInterval(contador);
+
+            } else {
+
+                numero.innerText =
+                    Math.floor(atual);
+
+            }
+
+        },20);
+
+    });
+
+}
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            animarNumeros();
+            observer.disconnect();
+
+        }
+
+    });
+
 });
+
+observer.observe(document.querySelector(".stats"));
