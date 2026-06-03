@@ -1,51 +1,90 @@
-const numeros = document.querySelectorAll('.numero');
+// CONTADORES ANIMADOS
 
-function animarNumeros() {
+const counters = document.querySelectorAll(".contador");
 
-    numeros.forEach(numero => {
+const startCounters = () => {
 
-        const alvo = +numero.dataset.target;
-        let atual = 0;
+    counters.forEach(counter => {
 
-        const incremento = alvo / 100;
+        const target = Number(counter.dataset.target);
+        const increment = target / 100;
 
-        const contador = setInterval(() => {
+        const updateCounter = () => {
 
-            atual += incremento;
+            const current = Number(counter.innerText);
 
-            if(atual >= alvo){
+            if (current < target) {
 
-                numero.innerText =
-                    alvo >= 1000 ? alvo + "+" : alvo + "%";
+                counter.innerText = Math.ceil(current + increment);
 
-                clearInterval(contador);
+                setTimeout(updateCounter, 20);
 
             } else {
 
-                numero.innerText =
-                    Math.floor(atual);
+                if (target === 1000) {
+                    counter.innerText = "1000+";
+                } else {
+                    counter.innerText = target + "%";
+                }
 
             }
 
-        },20);
+        };
+
+        updateCounter();
 
     });
 
-}
+};
 
-const observer = new IntersectionObserver((entries)=>{
+// OBSERVER PARA INICIAR CONTADORES APENAS QUANDO APARECEREM
 
-    entries.forEach(entry=>{
+const statsSection = document.querySelector(".estatisticas");
 
-        if(entry.isIntersecting){
+const observer = new IntersectionObserver((entries) => {
 
-            animarNumeros();
-            observer.disconnect();
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            startCounters();
+
+            observer.unobserve(statsSection);
 
         }
 
     });
 
+}, {
+    threshold: 0.4
 });
 
-observer.observe(document.querySelector(".stats"));
+observer.observe(statsSection);
+
+// ANIMAÇÃO DE ENTRADA DOS CARDS
+
+const cards = document.querySelectorAll(".card, .noticia");
+
+const revealObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+}, {
+    threshold: 0.15
+});
+
+cards.forEach(card => {
+
+    card.classList.add("hidden");
+
+    revealObserver.observe(card);
+
+});

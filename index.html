@@ -1,123 +1,320 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AgroForte</title>
 
-<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroForte</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
-<header>
-    <div class="logo">🌿 AgroForte</div>
+    <header class="header">
 
-    <nav>
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Notícias</a></li>
-            <li><a href="#">Sustentabilidade</a></li>
-            <li><a href="#">Sobre</a></li>
-        </ul>
-    </nav>
-</header>
+        <div class="logo">
+            🌿 AgroForte
+        </div>
 
-<section class="hero">
-    <div class="hero-content">
-        <h1>Agro Forte</h1>
-        <p>
-            Promovendo o equilíbrio entre produção agrícola e
-            preservação ambiental para um futuro sustentável.
-        </p>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
 
-        <a href="#" class="btn">Saiba Mais</a>
-    </div>
-</section>
+    </header>
 
-<section class="sobre">
-    <h2>O Futuro da Agricultura Sustentável</h2>
+    <!-- HERO -->
 
-    <p>
-        O AgroForte busca unir inovação, produtividade e respeito
-        ao meio ambiente, incentivando práticas agrícolas modernas
-        e sustentáveis.
-    </p>
-</section>
+    <section id="inicio" class="hero">
 
-<section class="stats">
+        <div class="hero-overlay"></div>
 
-    <div class="card">
-        <div class="numero" data-target="40">0</div>
-        <p>Aumento na Eficiência</p>
-    </div>
+        <div class="hero-content">
 
-    <div class="card">
-        <div class="numero" data-target="30">0</div>
-        <p>Redução no Consumo de Água</p>
-    </div>
+            <span class="hero-tag">
+                🌱 Agricultura Sustentável
+            </span>
 
-    <div class="card">
-        <div class="numero" data-target="50">0</div>
-        <p>Menos Emissões de CO₂</p>
-    </div>
+            <h1>
+                Agro Forte,
+                <br>
+                Futuro Sustentável
+            </h1>
 
-    <div class="card">
-        <div class="numero" data-target="1000">0</div>
-        <p>Fazendas Sustentáveis</p>
-    </div>
+            <p>
+                O equilíbrio perfeito entre produção agrícola e
+                preservação ambiental para garantir um futuro
+                mais verde e produtivo.
+            </p>
 
-</section>
+            <div class="hero-buttons">
 
-<footer>
+                <a href="#noticias" class="btn-primary">
+                    Ver Notícias
+                </a>
 
-<div class="footer-grid">
+                <a href="#sobre" class="btn-secondary">
+                    Saiba Mais
+                </a>
 
-<div>
-<h3>🌿 AgroForte</h3>
+            </div>
 
-<p>
-Promovendo o equilíbrio entre produção agrícola
-e preservação ambiental para um futuro sustentável.
-</p>
-</div>
+        </div>
 
-<div>
-<h3>Navegação</h3>
+    </section>
 
-<ul>
-<li><a href="#">Início</a></li>
-<li><a href="#">Notícias</a></li>
-<li><a href="#">Sustentabilidade</a></li>
-<li><a href="#">Tecnologia</a></li>
-</ul>
-</div>
+    <!-- PILARES -->
 
-<div>
-<h3>Temas</h3>
+    <section id="sustentabilidade" class="pilares">
 
-<ul>
-<li>Agricultura Regenerativa</li>
-<li>Tecnologias Verdes</li>
-<li>Conservação do Solo</li>
-<li>Energia Renovável</li>
-</ul>
-</div>
+        <div class="titulo">
 
-<div>
-<h3>Contato</h3>
+            <h2>Pilares da Sustentabilidade</h2>
 
-<p>(42) 99996-2983</p>
-<p>contato@agroforte.com</p>
-</div>
+            <p>
+                Construindo um futuro onde a produção agrícola
+                e o meio ambiente caminham juntos.
+            </p>
 
-</div>
+        </div>
 
-<div class="copy">
-© 2026 AgroForte. Todos os direitos reservados.
-</div>
+        <div class="cards">
 
-</footer>
+            <div class="card">
+                <div class="icone">🌱</div>
+                <h3>Agricultura Regenerativa</h3>
+                <p>
+                    Técnicas que restauram e melhoram a saúde do solo.
+                </p>
+            </div>
 
-<script src="script.js"></script>
+            <div class="card">
+                <div class="icone">💧</div>
+                <h3>Gestão Hídrica</h3>
+                <p>
+                    Uso responsável dos recursos hídricos.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icone">☀️</div>
+                <h3>Energia Renovável</h3>
+                <p>
+                    Soluções sustentáveis para o campo.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icone">♻️</div>
+                <h3>Economia Circular</h3>
+                <p>
+                    Reaproveitamento inteligente de recursos.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icone">📈</div>
+                <h3>Produtividade</h3>
+                <p>
+                    Mais eficiência sem prejudicar o meio ambiente.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icone">🛡️</div>
+                <h3>Preservação</h3>
+                <p>
+                    Conservação da biodiversidade e dos ecossistemas.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SOBRE -->
+
+    <section id="sobre" class="sobre">
+
+        <div class="sobre-container">
+
+            <h2>Sobre o AgroForte</h2>
+
+            <p>
+                O AgroForte é uma plataforma dedicada a promover
+                informações e notícias sobre o equilíbrio entre
+                produção agrícola e preservação ambiental.
+            </p>
+
+            <p>
+                Acreditamos que um futuro sustentável é possível
+                através da inovação, tecnologia e práticas agrícolas
+                responsáveis.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- NOTÍCIAS -->
+
+    <section id="noticias" class="noticias">
+
+        <div class="titulo">
+
+            <h2>Últimas Notícias</h2>
+
+            <p>
+                Fique por dentro das novidades do agronegócio sustentável.
+            </p>
+
+        </div>
+
+        <div class="noticias-grid">
+
+            <article class="noticia">
+                <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1200" alt="">
+                <div class="texto">
+                    <span>Tecnologia</span>
+                    <h3>Novas Tecnologias Verdes Aumentam a Produtividade</h3>
+                    <p>Inovações sustentáveis estão revolucionando o campo.</p>
+                </div>
+            </article>
+
+            <article class="noticia">
+                <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1200" alt="">
+                <div class="texto">
+                    <span>Sustentabilidade</span>
+                    <h3>Agricultura Regenerativa: O Futuro Está Aqui</h3>
+                    <p>Práticas modernas restauram áreas degradadas.</p>
+                </div>
+            </article>
+
+            <article class="noticia">
+                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200" alt="">
+                <div class="texto">
+                    <span>Energia</span>
+                    <h3>Energia Solar Impulsiona Fazendas Brasileiras</h3>
+                    <p>Redução de custos e aumento da eficiência.</p>
+                </div>
+            </article>
+
+            <article class="noticia">
+                <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=1200" alt="">
+                <div class="texto">
+                    <span>Meio Ambiente</span>
+                    <h3>Preservação Ambiental Ganha Destaque</h3>
+                    <p>Novas iniciativas fortalecem a biodiversidade.</p>
+                </div>
+            </article>
+
+            <article class="noticia">
+                <img src="https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?w=1200" alt="">
+                <div class="texto">
+                    <span>Campo</span>
+                    <h3>Produção Sustentável Cresce no Brasil</h3>
+                    <p>Setor agrícola aposta em inovação verde.</p>
+                </div>
+            </article>
+
+            <article class="noticia">
+                <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=1200" alt="">
+                <div class="texto">
+                    <span>Inovação</span>
+                    <h3>Soluções Inteligentes Transformam o Agronegócio</h3>
+                    <p>Tecnologia e sustentabilidade caminham juntas.</p>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- ESTATÍSTICAS -->
+
+    <section class="estatisticas">
+
+        <div class="item">
+            <h3 class="contador" data-target="40">0</h3>
+            <p>Aumento na Eficiência</p>
+        </div>
+
+        <div class="item">
+            <h3 class="contador" data-target="30">0</h3>
+            <p>Redução no Consumo de Água</p>
+        </div>
+
+        <div class="item">
+            <h3 class="contador" data-target="50">0</h3>
+            <p>Menos Emissões de CO₂</p>
+        </div>
+
+        <div class="item">
+            <h3 class="contador" data-target="1000">0</h3>
+            <p>Fazendas Sustentáveis</p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <div>
+                <h3>🌿 AgroForte</h3>
+                <p>
+                    Promovendo o equilíbrio entre produção agrícola
+                    e preservação ambiental.
+                </p>
+            </div>
+
+            <div>
+                <h3>Navegação</h3>
+                <ul>
+                    <li>Início</li>
+                    <li>Notícias</li>
+                    <li>Sustentabilidade</li>
+                    <li>Sobre</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Temas</h3>
+                <ul>
+                    <li>Agricultura Regenerativa</li>
+                    <li>Energia Renovável</li>
+                    <li>Conservação do Solo</li>
+                    <li>Tecnologias Verdes</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Contato</h3>
+                <p>contato@agroforte.com</p>
+                <p>(42) 99999-9999</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 AgroForte. Todos os direitos reservados.
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
